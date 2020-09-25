@@ -27,7 +27,7 @@ jobs:
       if: ${{ !cancelled() }}
       uses: montudor/action-zip@v0.1.0
       with:
-        args: unzip -qq /releng/com.espressif.idf.update/target/com.espressif.idf.update-1.2.1-SNAPSHOT.zip -d artifacts
+        args: unzip -qq /home/runner/work/idf-eclipse-plugin/idf-eclipse-plugin/releng/com.espressif.idf.update/target/com.espressif.idf.update-1.2.1-SNAPSHOT.zip -d artifacts
     - name: Upload a Build Artifact
       if: ${{ !cancelled() }}
       uses: actions/upload-artifact@v2
